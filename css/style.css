@@ -6,9 +6,15 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Poppins', 'Roboto', sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* Icon Styles */
+i {
+    display: inline-block;
+    margin-right: 0.5rem;
 }
 
 .container {
@@ -29,7 +35,7 @@ body {
     box-shadow: 0 20px 25px -5px rgba(43, 127, 255, 0.10), 0 8px 10px -6px rgba(43, 127, 255, 0.10);
 }
 
-.header .container {
+.header-container {
     display: flex;
     height: 48px;
     justify-content: space-between;
@@ -92,9 +98,11 @@ body {
     display: flex;
     align-items: center;
     gap: 4px;
+    list-style: none;
 }
 
 .nav-link {
+    list-style: none;
     display: flex;
     width: 112px;
     height: 43px;
@@ -112,11 +120,31 @@ body {
     font-weight: 500;
     line-height: 24px; /* 133.333% */
 }
-
 .nav-link:hover {
+    color: #4A5565;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 3px solid #5fb1ab;
+    background: #FFF;
+}
+
+.nav-link-active {
     color: #009689;
     border-bottom: 3px solid #009689;
-    background: #FFF;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 133.333% */
+}
+.nav-btn{
+    display: flex;
+    height: 45px;
+    padding: 0 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
 }
 
 /* Hero Section */
