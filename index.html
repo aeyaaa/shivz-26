@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivz 2026</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="header">
+        <div class="container">
+            <div class="nav-logo">
+                <img class="logo-image" src="/images/shivz-logo.png" style="" alt="shivz logo" class="logo-image">
+                <div class="logo-text">
+                    <h1>SHIVZ SOLUTION</h1>
+                    <h2>Modern Recruitment Agency</h2>
+                </div>
+            </div>
+            <div class="nav">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#careers" class="nav-link">Careers</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button onclick="scrollToSection('careers')">
+                    <img src="search-icon" alt="search-icon">
+                    <h4>Explore Careers</h4>    
+                </button>
+            </div>
+            
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate developer creating amazing web experiences</p>
+            <button class="cta-button" onclick="scrollToSection('about')">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I'm a full-stack developer with expertise in HTML, CSS, and JavaScript. I love creating responsive and user-friendly websites.</p>
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Responsive Design</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project 1</h3>
+                    <p>A responsive website built with HTML, CSS, and JavaScript.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2</h3>
+                    <p>An interactive web application with dynamic features.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3</h3>
+                    <p>A modern portfolio website showcasing my work.</p>
+                    <a href="#" class="project-link">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
