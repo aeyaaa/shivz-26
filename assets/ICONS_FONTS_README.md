@@ -1,31 +1,108 @@
 # Icons & Fonts Documentation
 
 ## Overview
-This project uses Font Awesome icons and Google Fonts for a modern, professional look.
+This project uses Font Awesome icons and custom Google Fonts (Arimо, Inter, Space Mono) for a modern, professional look matching Figma designs.
 
 ---
 
 ## Google Fonts
 
 ### Imported Fonts
-- **Poppins** (weights: 300, 400, 500, 600, 700) - Used for modern headings and UI elements
-- **Roboto** (weights: 400, 500, 700) - Used for body text and content
 
-### How to Use Fonts
+#### 1. **Arimо** (weights: 400, 500, 600, 700)
+- **Usage**: Primary font for all headings (h1-h6)
+- **Purpose**: Bold, modern, professional appearance for titles and headers
+- **CSS**: 
+  ```css
+  h1, h2, h3, h4, h5, h6 {
+      font-family: 'Arimо', sans-serif;
+  }
+  ```
 
-In your CSS:
-```css
-/* For Poppins font */
-h1, h2, h3 {
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+#### 2. **Inter** (weights: 300, 400, 500, 600, 700)
+- **Usage**: Main body text and general content
+- **Purpose**: Highly legible for paragraphs, body text, and UI elements
+- **CSS**:
+  ```css
+  body, p, span, li {
+      font-family: 'Inter', sans-serif;
+  }
+  ```
+
+#### 3. **Space Mono** (weights: 400, 700)
+- **Usage**: Code blocks, monospace text, technical content
+- **Purpose**: Monospace font for displaying code snippets and technical information
+- **CSS**:
+  ```css
+  code, pre, .code-block {
+      font-family: 'Space Mono', monospace;
+  }
+  ```
+
+### How to Call & Use These Fonts in HTML
+
+#### For Headings (Arimо)
+```html
+<h1>Main Title</h1>
+<h2>Section Heading</h2>
+<h3>Subsection</h3>
+```
+
+#### For Body Text (Inter)
+```html
+<p>This is regular body text using Inter font.</p>
+<span>Inline text element</span>
+```
+
+#### For Code/Technical Content (Space Mono)
+```html
+<code>const variable = value;</code>
+<pre>
+function example() {
+    return 'code block';
 }
+</pre>
+```
 
-/* For Roboto font */
-p, body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-}
+### Font Weight Reference
+
+| Font | Weight | CSS | Use Case |
+|------|--------|-----|----------|
+| Arimо | 400 | `font-weight: 400;` | Regular text |
+| Arimо | 500 | `font-weight: 500;` | Semi-bold |
+| Arimо | 600 | `font-weight: 600;` | Bold |
+| Arimо | 700 | `font-weight: 700;` | Extra bold |
+| Inter | 300 | `font-weight: 300;` | Light text |
+| Inter | 400 | `font-weight: 400;` | Regular |
+| Inter | 500 | `font-weight: 500;` | Medium |
+| Inter | 600 | `font-weight: 600;` | Semi-bold |
+| Inter | 700 | `font-weight: 700;` | Bold |
+| Space Mono | 400 | `font-weight: 400;` | Regular code |
+| Space Mono | 700 | `font-weight: 700;` | Bold code |
+
+### Practical Examples
+
+#### Navigation Menu (Arimо + Inter)
+```html
+<nav>
+    <h3>Brand Name</h3> <!-- Uses Arimо -->
+    <p>Navigation text</p> <!-- Uses Inter -->
+</nav>
+```
+
+#### Section with Title and Description (Arimо + Inter)
+```html
+<section>
+    <h2>Section Title</h2> <!-- Arimо, bold -->
+    <p>Section description using Inter font for better readability.</p> <!-- Inter -->
+</section>
+```
+
+#### Code Documentation (Space Mono)
+```html
+<div class="code-block">
+    <code>npm install package-name</code>
+</div>
 ```
 
 ---

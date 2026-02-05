@@ -1,14 +1,36 @@
 /* Global Styles */
+:root{
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --font-heading: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: "liga" 1, "kern" 1;
+  font-kerning: normal;
+}
 
 body {
-    font-family: 'Poppins', 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #333;
+}
+
+/* Heading Styles */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arimо', sans-serif;
+    font-weight: 700;
+}
+
+/* Code & Monospace Styles */
+code, pre, .code-block {
+    font-family: 'Space Mono', monospace;
 }
 
 /* Icon Styles */
@@ -18,7 +40,6 @@ i {
 }
 
 .container {
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -26,27 +47,30 @@ i {
 /* Navigation */
 .header {
     display: flex;
-    height: 90px;
-    padding: 0 80px;
+    padding: 12px 20px;
     align-items: center;
+    justify-content: space-around;
     flex-shrink: 0;
+    position: relative;
+    z-index: 50;
 
     background: #FFF;
     box-shadow: 0 20px 25px -5px rgba(43, 127, 255, 0.10), 0 8px 10px -6px rgba(43, 127, 255, 0.10);
 }
 
 .header-container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
-    height: 48px;
     justify-content: space-between;
     align-items: center;
-    flex-shrink: 0;
-    align-self: stretch;
+    gap: 20px;
+    padding: 0 10px;
 }
 
 .nav-logo {
     display: flex;
-    width: 222.139px;
     height: 48px;
     align-items: center;
     gap: 7px;
@@ -73,15 +97,14 @@ i {
 }
 .logo-text h1{
     color: #686A6F;
-    font-family: Inter;
+    font-family: 'inter', sans-serif;
     font-size: 18px;
     font-style: normal;
     font-weight: 800;
-    line-height: 32px; /* 177.778% */
 }
 .logo-text h2{
     color: #868A92;
-    font-family: Arimo;
+    font-family: 'Inter', sans-serif;
     font-size: 12px;
     font-style: normal;
     font-weight: 400;
@@ -101,42 +124,30 @@ i {
     list-style: none;
 }
 
+.nav-menu li{
+        list-style: none;
+}
+
 .nav-link {
-    list-style: none;
-    display: flex;
-    width: 112px;
-    height: 43px;
-    padding: 13px 19px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+    display: inline-flex;
+    padding: 2px 19px;
     text-decoration: none;
     color: #4A5565;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 133.333% */
+    transition: all 0.3s ease;
 }
 .nav-link:hover {
-    color: #4A5565;
-    font-size: 18px;
-    font-weight: 600;
+    color: #5fb1ab;
     border-bottom: 3px solid #5fb1ab;
-    background: #FFF;
 }
 
 .nav-link-active {
     color: #009689;
     border-bottom: 3px solid #009689;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 133.333% */
 }
 .nav-btn{
     display: flex;
@@ -144,7 +155,23 @@ i {
     padding: 0 16px;
     justify-content: center;
     align-items: center;
-    gap: 6px;
+    gap: 4px;
+
+    border: 1px solid #089ca9;
+    border-radius: 14px;
+    background: linear-gradient(90deg, #1AAAB7 0%, #00B8DB 100%);
+    box-shadow: 0 10px 15px -3px rgba(43, 127, 255, 0.30), 0 4px 6px -4px rgba(43, 127, 255, 0.30);
+}
+.nav-btn i {
+    color: #FFFFFF;
+}
+.nav-btn span{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
 }
 
 /* Hero Section */
