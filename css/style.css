@@ -281,7 +281,53 @@ align-self: stretch;
     border: 1.778px solid rgba(203, 251, 241, 0.22);
     background: rgba(14, 159, 147, 0.50);
 }
+.content-media {
+    display: flex;
+    width: 584px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+}
+.hero-video {
+    display: flex;
+height: 350.278px;
+padding: 24.889px 24.889px 0.889px 24.889px;
+flex-direction: column;
+align-items: flex-start;
+align-self: stretch;
+border-radius: 24px;
+border: 0.889px solid rgba(255, 255, 255, 0.20);
+background: rgba(255, 255, 255, 0.05);
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
 
+.media-label {
+    border-radius: 24px;
+border: 0.889px solid rgba(255, 255, 255, 0.20);
+background: rgba(255, 255, 255, 0.05);
+box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.media-label-circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 29826200px;
+    opacity: 0.8071;
+    background: #E161F8;
+}
+.media-label span {
+    display: flex;
+    padding-right: 0.903px;
+    justify-content: center;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.90);
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px; /* 142.857% */
+}
 
 
 .cta-button {
