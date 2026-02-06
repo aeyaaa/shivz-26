@@ -179,23 +179,20 @@ i {
     background: linear-gradient(135deg, rgba(9, 144, 134, 0.95) 0%, rgba(0, 95, 90, 0.90) 50%, rgba(1, 132, 139, 0.95) 100%);
     text-align: center;
     padding: 40px 20px;
+    display: flex;
 }
 .hero-container {
     display: flex;
     width: 100%;
     max-width: 1440px;
     margin: 0 auto;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
     padding: 0 10px;
 }
 .hero-content {
     display: flex;
-    flex-direction: row;
-    justify-content: c;
     align-items: center;
+    flex-direction: row;
+    gap: 40px;
     align-self: stretch;
 }
 .content-text {
