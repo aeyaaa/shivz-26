@@ -177,7 +177,6 @@ i {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, rgba(9, 144, 134, 0.95) 0%, rgba(0, 95, 90, 0.90) 50%, rgba(1, 132, 139, 0.95) 100%);
-    text-align: center;
     padding: 40px 20px;
     display: flex;
 }
@@ -187,14 +186,12 @@ i {
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
-    flex-direction: row;
 }
 .hero-content {
     display: flex;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-around;
     gap: 40px;
-    align-self: stretch;
 }
 .content-text {
     display: flex;
@@ -256,9 +253,9 @@ i {
 }
 .hero-btn {
     display: flex;
-align-items: center;
-gap: 16px;
-align-self: stretch;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
 }
 .hero-hire-btn {
     display: flex;
@@ -330,22 +327,6 @@ box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     line-height: 20px; /* 142.857% */
 }
 
-@media (max-width: 768px) {
-    .hero-content {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .content-text,
-    .content-media {
-        max-width: 100%;
-    }
-
-    .hero-btn {
-        width: 100%;
-        justify-content: center;
-    }
-}
 
 
 .cta-button {
