@@ -177,7 +177,7 @@ i {
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, rgba(9, 144, 134, 0.95) 0%, rgba(0, 95, 90, 0.90) 50%, rgba(1, 132, 139, 0.95) 100%);
-    padding: 40px 20px;
+    padding: 90px 40px;
     display: flex;
 }
 .hero-container {
@@ -192,6 +192,7 @@ i {
     flex-direction: row;
     justify-content: space-around;
     gap: 40px;
+    width: -webkit-fill-available;
 }
 .content-text {
     display: flex;
@@ -302,9 +303,14 @@ box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 
 .media-label {
     border-radius: 24px;
-border: 0.889px solid rgba(255, 255, 255, 0.20);
-background: rgba(255, 255, 255, 0.05);
-box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: 0.889px solid rgba(255, 255, 255, 0.20);
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 2px 20px;
 }
 
 .media-label-circle {
@@ -312,7 +318,7 @@ box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
     height: 8px;
     border-radius: 29826200px;
     opacity: 0.8071;
-    background: #E161F8;
+    background: #ff8b17;
 }
 .media-label span {
     display: flex;
